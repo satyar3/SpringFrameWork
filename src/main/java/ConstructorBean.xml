@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+ 	<bean id="Student1"  class="com.qa.ioc.literals.constructor.injection.Student">
+ 		<constructor-arg name="rollNo" value = "1" type="int"/>
+ 		<constructor-arg name="studentName" value = "Ram" />
+ 	</bean>
+    <bean id="Student2"  class="com.qa.ioc.literals.constructor.injection.Student">
+    	<constructor-arg name="rollNo" value = "2" type="int"/>
+    	<constructor-arg name="studentName" value = "Sam" />
+    </bean>
+    <bean id="Student3"  class="com.qa.ioc.literals.constructor.injection.Student">
+    	<constructor-arg name="rollNo" value = "3" type="int"/>
+    	<constructor-arg name="studentName" value = "Pam" /> 
+    </bean>
+     
+</beans>
